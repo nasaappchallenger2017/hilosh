@@ -1,3 +1,7 @@
+<?php
+require_once 'includes.php';
+$localidades = Localidades::ObtenerLocalidades();
+?>
 <html>
 <head>
     <title>Registro - HilOsH</title>

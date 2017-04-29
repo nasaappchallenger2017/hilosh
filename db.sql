@@ -14,7 +14,9 @@ CREATE TABLE IF NOT EXISTS `nasa`.`localidades` (
   `latitud` VARCHAR(64) NOT NULL,
   `longitud` VARCHAR(64) NOT NULL,
   PRIMARY KEY (`codigo`))
-  ENGINE = InnoDB;
+  ENGINE = InnoDB
+  DEFAULT CHARACTER SET = latin1
+  COLLATE = latin1_swedish_ci;
 
 
 -- -----------------------------------------------------
@@ -36,7 +38,9 @@ CREATE TABLE IF NOT EXISTS `nasa`.`usuarios` (
   REFERENCES `nasa`.`localidades` (`codigo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-  ENGINE = InnoDB;
+  ENGINE = InnoDB
+  DEFAULT CHARACTER SET = latin1
+  COLLATE = latin1_swedish_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
