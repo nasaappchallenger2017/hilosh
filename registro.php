@@ -32,7 +32,7 @@
                     <label for="contrasena">Contraseña</label>
                     <input type="text" class="form-control" id="contrasena" placeholder="Contraseña">
                 </div>
-            
+
             </form>
         </div>
     </div>
