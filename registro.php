@@ -18,25 +18,34 @@ $localidades = Localidades::ObtenerLocalidades();
             <form class="form-registro">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <input required type="text" class="form-control" id="nombre" placeholder="Nombre">
                 </div>
                 <div class="form-group">
                     <label for="email">Su email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Su email">
+                    <input required type="email" class="form-control" id="email" placeholder="Su email">
                 </div>
                 <div class="form-group">
                     <label for="telefono">Número de teléfono con característica</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+                    <input required type="text" class="form-control" id="telefono" placeholder="Telefono">
                 </div>
                 <div class="form-group">
                     <label for="usuario">Nombre de usuario</label>
-                    <input type="text" class="form-control" id="usuario" placeholder="Nombre de usuario">
+                    <input required type="text" class="form-control" id="usuario" placeholder="Nombre de usuario">
                 </div>
                 <div class="form-group">
                     <label for="contrasena">Contraseña</label>
-                    <input type="text" class="form-control" id="contrasena" placeholder="Contraseña">
+                    <input required type="text" class="form-control" id="contrasena" placeholder="Contraseña">
                 </div>
-
+                <div class="form-group">
+                    <label for="contrasena">Localidades</label>
+                    <select required class="form-control">
+                        <option>Eleja su localidad</option>
+                        <?php foreach ($localidades as $localidad) { ?>
+                            <option value="<?php echo $localidad['codigo']; ?>"><?php echo $localidad['nombre']; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
             </form>
         </div>
     </div>
