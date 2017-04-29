@@ -1,11 +1,8 @@
 <html>
 <head>
-    <title>Login - HilosH</title>
+    <title>Login - HilOsH</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        .form-signin {
-            margin-top: 200px;
-        }
     </style>
 </head>
 <body>
@@ -13,7 +10,9 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Ingreso de usuarios HilOsH</h1>
+                <hr>
                 <form class="form-signin">
                     <h2 class="form-signin-heading">Ingrese al sistema</h2>
                     <label for="usuario" class="sr-only">Usuario</label>
