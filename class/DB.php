@@ -2,10 +2,10 @@
 
 class DB extends mysqli
 {
-    const CONFIG_USUARIO = 'root';
-    const CONFIG_CONTRASENA = '123';
+    const CONFIG_USUARIO = 'nailsonlinux';
+    const CONFIG_CONTRASENA = '';
     const CONFIG_BASEDATOS = 'nasa';
-    const CONFIG_HOST = 'localhost';
+    const CONFIG_HOST = '172.17.0.75';
     public $result;
 
     public function __construct()

@@ -1,0 +1,81 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Mapa - HilOsH</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+    <style type="text/css">
+        #mapa {
+            height: 500px;
+        }
+        .naranja {
+            color: #FF851B;
+            font-size: 20px;
+        }
+        .rojo {
+            color: #FF4136;
+            font-size: 20px;
+        }
+        .amarillo {
+            color: #FFDC00;
+            font-size: 20px;
+        }
+        .verde {
+            color: #2ECC40;
+            font-size: 20px;
+        }
+        
+        .navbar-right {
+            margin-right: 0px;
+        }
+        
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><b>H</b>il<b>O</b>s<b>H</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+            <p class="navbar-text navbar-right">Usuario: Municipalid - Rosario</a></p>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Mapa de inundaciones</h1>
+            <hr>
+            <div id="mapa">
+                
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h1>Ciudades</h1>
+            <hr>
+            <img width="360px" src="img/planilla.png"></img>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/toastr.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/gmaps.js"></script>
+<script src="js/mapa.js"></script>
+</body>
+</html>
