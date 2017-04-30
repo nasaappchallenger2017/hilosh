@@ -12,6 +12,7 @@ if (isset($_POST['usuario'])) {
 
     try {
         Usuarios::Agregar($nombre, $email, $telefono, $usuario, $contrasena, $localidad);
+        header('Location: registro_confirmado.php');
     }
     catch (Exception $ex) {
         $error = $ex->getMessage();
