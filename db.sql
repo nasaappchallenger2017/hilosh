@@ -30,11 +30,11 @@ CREATE TABLE IF NOT EXISTS `nasa`.`usuarios` (
   `email` VARCHAR(128) NULL,
   `telefono` VARCHAR(32) NOT NULL,
   `tipo` VARCHAR(64) NOT NULL,
-  `localidade_codigo` INT UNSIGNED NOT NULL,
+  `localidad_codigo` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`codigo`),
-  INDEX `fk_usuarios_localidades_idx` (`localidade_codigo` ASC),
+  INDEX `fk_usuarios_localidades_idx` (`localidad_codigo` ASC),
   CONSTRAINT `fk_usuarios_localidades`
-  FOREIGN KEY (`localidade_codigo`)
+  FOREIGN KEY (`localidad_codigo`)
   REFERENCES `nasa`.`localidades` (`codigo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
