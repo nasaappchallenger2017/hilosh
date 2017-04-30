@@ -31,6 +31,9 @@ CREATE TABLE IF NOT EXISTS `nasa`.`usuarios` (
   `telefono` VARCHAR(32) NOT NULL,
   `tipo` VARCHAR(64) NOT NULL,
   `localidad_codigo` INT UNSIGNED NOT NULL,
+  `barrio` VARCHAR(128) NOT NULL,
+  `calle` VARCHAR(128) NOT NULL,
+  `numero` VARCHAR(128) NOT NULL,
   PRIMARY KEY (`codigo`),
   INDEX `fk_usuarios_localidades_idx` (`localidad_codigo` ASC),
   CONSTRAINT `fk_usuarios_localidades`

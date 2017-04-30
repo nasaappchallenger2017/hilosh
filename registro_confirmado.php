@@ -6,6 +6,15 @@ require_once 'includes.php';
     <title>Registro - HilOsH</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/toastr.min.css">
+    <style>
+        #icono-confirmacion {
+            font-size: 200px;
+            color: #5cb85c;
+        }
+        #confirmacion {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,9 +22,12 @@ require_once 'includes.php';
 
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1>Registro confirmado</h1>
-            <hr>
-
+            <div id="confirmacion">
+                <h1>Registro confirmado!</h1>
+                <hr>
+                <span id="icono-confirmacion" class="glyphicon glyphicon-ok-circle"></span>
+                <h3>HilOsH te avisa en caso de una emergencia!</h3>
+            </div>
         </div>
     </div>
 

@@ -9,9 +9,12 @@ if (isset($_POST['usuario'])) {
     $usuario = isset($_POST['usuario'])?$_POST['usuario'] : null;
     $contrasena = isset($_POST['contrasena'])?$_POST['contrasena'] : null;
     $localidad = isset($_POST['localidad'])?$_POST['localidad'] : null;
+    $barrio = isset($_POST['barrio'])?$_POST['barrio'] : null;
+    $calle = isset($_POST['calle'])?$_POST['calle'] : null;
+    $numero = isset($_POST['numero'])?$_POST['numero'] : null;
 
     try {
-        Usuarios::Agregar($nombre, $email, $telefono, $usuario, $contrasena, $localidad);
+        Usuarios::Agregar($nombre, $email, $telefono, $usuario, $contrasena, $localidad, $barrio, $calle, $numero);
         header('Location: registro_confirmado.php');
     }
     catch (Exception $ex) {
@@ -66,6 +69,18 @@ else {
                             <option value="<?php echo $localidad['codigo']; ?>"><?php echo $localidad['nombre']; ?></option>
                         <?php } ?>
                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="barrio">Barrio</label>
+                    <input required type="text" class="form-control" id="barrio" name="barrio" placeholder="Su barrio">
+                </div>
+                <div class="form-group">
+                    <label for="calle">Calle</label>
+                    <input required type="text" class="form-control" id="calle" name="calle" placeholder="Su calle">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Numero</label>
+                    <input required type="text" class="form-control" id="numero" name="numero" placeholder="Su numero">
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
             </form>
